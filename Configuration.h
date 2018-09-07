@@ -44,7 +44,7 @@ Here are some standard links for getting your machine calibrated:
 // User-specified version info of this build to display in [Pronterface, etc] terminal window during
 // startup. Implementation of an idea by Prof Braino to inform user that any changes made to this
 // build by the user have been successfully uploaded into firmware.
-#define STRING_VERSION "1.0.3 pwk-2"
+#define STRING_VERSION "1.0.3 pwk-3"
 #define STRING_URL "reprap.org"
 #define STRING_VERSION_CONFIG_H __DATE__ " " __TIME__ // build date and time
 #define STRING_CONFIG_H_AUTHOR "(none, default config)" // Who made the changes.
@@ -250,9 +250,9 @@ Here are some standard links for getting your machine calibrated:
 #ifdef PIDTEMPBED
 //120v 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
 //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-    #define  DEFAULT_bedKp 10.00
-    #define  DEFAULT_bedKi .023
-    #define  DEFAULT_bedKd 305.4
+    #define  DEFAULT_bedKp 416.53
+    #define  DEFAULT_bedKi 62.31
+    #define  DEFAULT_bedKd 696.07
 
 //120v 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
 //from pidautotune
