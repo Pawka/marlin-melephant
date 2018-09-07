@@ -70,7 +70,7 @@
 #define HEATER_0_PIN       4
 #define HEATER_1_PIN       -1 // 12
 #define HEATER_2_PIN       -1 // 13
-#define TEMP_0_PIN          0 //D27   // MUST USE ANALOG INPUT NUMBERING NOT DIGITAL OUTPUT NUMBERING!!!!!!!!!
+#define TEMP_0_PIN          0 //D27   // MUST USE ANALOG INPUT NUMBERING NOT DIGITAL OUTPUT NUMBERING...
 #define TEMP_1_PIN         -1 // 1
 #define TEMP_2_PIN         -1 // 2
 #define HEATER_BED_PIN     -1 // 14/15

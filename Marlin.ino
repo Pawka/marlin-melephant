@@ -41,7 +41,7 @@
     #include <Wire.h>
     #include <LiquidTWI2.h>
   #elif defined(DOGLCD)
-   #include "U8glib.h" // library for graphics LCD by Oli Kraus (https://code.google.com/p/u8glib/)
+    #include "U8glib.h" // library for graphics LCD by Oli Kraus (https://code.google.com/p/u8glib/)
   #else
     #include <LiquidCrystal.h> // library for character LCD
   #endif
@@ -53,14 +53,4 @@
 
 #if defined(DIGIPOT_I2C)
   #include <Wire.h>
-#endif
-
-#ifdef HAVE_TMCDRIVER
-  #include <SPI.h>
-  #include <TMC26XStepper.h>
-#endif
-
-#ifdef HAVE_L6470DRIVER
-  #include <SPI.h>
-  #include <L6470.h>
 #endif
