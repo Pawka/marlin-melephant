@@ -500,9 +500,9 @@ const bool Z_PROBE_ENDSTOP_INVERTING = true; // set to true to invert the logic 
 
   // Offsets to the probe relative to the extruder tip (Hotend - Probe)
   // X and Y offsets must be integers
-  #define X_PROBE_OFFSET_FROM_EXTRUDER 38     // Probe on: -left  +right 0
-  #define Y_PROBE_OFFSET_FROM_EXTRUDER -1    // Probe on: -front +behind
-  #define Z_PROBE_OFFSET_FROM_EXTRUDER -0.8 // -below (always!)
+  #define X_PROBE_OFFSET_FROM_EXTRUDER 25     // Probe on: -left  +right 0
+  #define Y_PROBE_OFFSET_FROM_EXTRUDER 20    // Probe on: -front +behind
+  #define Z_PROBE_OFFSET_FROM_EXTRUDER -2 // -below (always!)
 
   #define Z_RAISE_BEFORE_HOMING 4       // (in mm) Raise Z before homing (G28) for Probe Clearance.
                                         // Be sure you have this distance over your Z_MAX_POS in case
