@@ -44,7 +44,7 @@ Here are some standard links for getting your machine calibrated:
 // User-specified version info of this build to display in [Pronterface, etc] terminal window during
 // startup. Implementation of an idea by Prof Braino to inform user that any changes made to this
 // build by the user have been successfully uploaded into firmware.
-#define STRING_VERSION "1.0.3 pwk-4"
+#define STRING_VERSION "1.0.3 pwk-5"
 #define STRING_URL "reprap.org"
 #define STRING_VERSION_CONFIG_H __DATE__ " " __TIME__ // build date and time
 #define STRING_CONFIG_H_AUTHOR "(none, default config)" // Who made the changes.
@@ -500,9 +500,9 @@ const bool Z_PROBE_ENDSTOP_INVERTING = true; // set to true to invert the logic 
 
 // Offsets to the probe relative to the extruder tip (Hotend - Probe)
 // X and Y offsets must be integers
-#define X_PROBE_OFFSET_FROM_EXTRUDER 25     // Probe on: -left  +right 0
-#define Y_PROBE_OFFSET_FROM_EXTRUDER -1    // Probe on: -front +behind
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -0.4 // -below (always!)
+#define X_PROBE_OFFSET_FROM_EXTRUDER 37    // Probe on: -left  +right 0
+#define Y_PROBE_OFFSET_FROM_EXTRUDER 0    // Probe on: -front +behind
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -13 // -below (always!)
 
 #define Z_RAISE_BEFORE_HOMING 4       // (in mm) Raise Z before homing (G28) for Probe Clearance.
 // Be sure you have this distance over your Z_MAX_POS in case
@@ -511,7 +511,7 @@ const bool Z_PROBE_ENDSTOP_INVERTING = true; // set to true to invert the logic 
 
 #define Z_RAISE_BEFORE_PROBING 10   //How much the extruder will be raised before traveling to the first probing point.
 #define Z_RAISE_BETWEEN_PROBINGS 5  //How much the extruder will be raised when traveling from between next probing points
-#define Z_RAISE_AFTER_PROBING 10    //How much the extruder will be raised after the last probing point.
+#define Z_RAISE_AFTER_PROBING 5    //How much the extruder will be raised after the last probing point.
 
 //   #define Z_PROBE_END_SCRIPT "G1 Z10 F12000\nG1 X15 Y330\nG1 Z0.5\nG1 Z10" //These commands will be executed in the end of G29 routine.
 //Useful to retract a deployable probe.
