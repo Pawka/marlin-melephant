@@ -12,4 +12,4 @@ modifications were made. Following additions were performed:
 
 ## Issues
 
-- LCD screen does not work anymore after upgrade to Marlin 1.1.9.
+[x] LCD screen does not work anymore after upgrade to Marlin 1.1.9.
