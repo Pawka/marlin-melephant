@@ -163,7 +163,11 @@
   //U8GLIB_ST7920_128X64_4X u8g(LCD_PINS_D4, LCD_PINS_ENABLE, LCD_PINS_RS); // Original u8glib device. 2 stripes
                                                                             // No 4 stripe device available from u8glib.
   //U8GLIB_ST7920_128X64_1X u8g(LCD_PINS_D4, LCD_PINS_ENABLE, LCD_PINS_RS);    // Original u8glib device. 8 stripes
-  U8GLIB_ST7920_128X64_RRD u8g(0); // Number of stripes can be adjusted in ultralcd_st7920_u8glib_rrd.h with PAGE_HEIGHT
+
+  // PAWKA: I've disabled this one.
+  //U8GLIB_ST7920_128X64_RRD u8g(0); // Number of stripes can be adjusted in ultralcd_st7920_u8glib_rrd.h with PAGE_HEIGHT
+  // PAWKA: I've copied this line from original firmware and this enabled an LCD
+  U8GLIB_SH1106_128X64 u8g(41, 37, 29, 23);
 #elif ENABLED(CARTESIO_UI)
   // The CartesioUI display
   #if DOGLCD_MOSI != -1 && DOGLCD_SCK != -1
